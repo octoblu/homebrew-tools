@@ -7,6 +7,7 @@ class Etcdsync < Formula
 
   def install
     ENV["GOPATH"] = File.join buildpath, "go"
+    ENV["GO15VENDOREXPERIMENT"] = "1"
     mkdir_p "go/src/github.com/royvandewater"
     ln_s buildpath, "go/src/github.com/royvandewater/etcdsync"
     system "ls", "-l", "go/src/github.com/royvandewater/"
