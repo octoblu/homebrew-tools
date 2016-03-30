@@ -3,6 +3,13 @@ class Etcdsync < Formula
   homepage "https://github.com/royvandewater/etcdsync"
   url "https://github.com/royvandewater/etcdsync/archive/v1.1.2.tar.gz"
   sha256 "a5ff2b6d49a29fcfe3d5837ff2374a44cb986b27f9bcca4789f9224b9442a129"
+
+  bottle do
+    root_url "https://github.com/royvandewater/etcdsync/releases/download/v1.1.2"
+    cellar :any_skip_relocation
+    sha256 "801949c2baf5a70025b265fd607f52a6e61f20e21c97f815924d53e45084d17c" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   def install
