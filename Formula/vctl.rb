@@ -8,6 +8,7 @@ class Vctl < Formula
     root_url "https://github.com/octoblu/vulcand-bundle/releases/download/v1.3.1"
     cellar :any_skip_relocation
     sha256 "1f7af91b774413d6875d15ae41aa980bbcca20b7a7eae9f58720a07008ccf158" => :el_capitan
+    sha256 "45a9a0abaa2ed2e63a966e44abff61c44b6fe7b5ac0804af951bc8d822be1b6f" => :yosemite
   end
 
   depends_on "go" => :build

@@ -8,6 +8,7 @@ class Etcdsync < Formula
     root_url "https://github.com/royvandewater/etcdsync/releases/download/v1.1.2"
     cellar :any_skip_relocation
     sha256 "801949c2baf5a70025b265fd607f52a6e61f20e21c97f815924d53e45084d17c" => :el_capitan
+    sha256 "b64c1e497af674e11c7b09ca5eca6e62d85305b0547ee5d6215368a9989dc588" => :yosemite
   end
 
   depends_on "go" => :build
