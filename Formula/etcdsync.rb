@@ -23,6 +23,6 @@ class Etcdsync < Formula
   end
 
   test do
-    system "go", "test"
+    system "#{bin}/etcdsync", "--version"
   end
 end
