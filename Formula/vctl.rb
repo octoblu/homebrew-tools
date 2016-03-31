@@ -4,6 +4,12 @@ class Vctl < Formula
   url "https://github.com/octoblu/vulcand-bundle/archive/v1.3.1.tar.gz"
   sha256 "14dcb73e43cd04e9ddb4928602532604fc67eef015aa20b5893b0ffff8edd3d9"
 
+  bottle do
+    root_url "https://github.com/octoblu/vulcand-bundle/releases/download/v1.3.1"
+    cellar :any_skip_relocation
+    sha256 "1f7af91b774413d6875d15ae41aa980bbcca20b7a7eae9f58720a07008ccf158" => :el_capitan
+  end
+
   depends_on "go" => :build
 
   def install
@@ -18,6 +24,6 @@ class Vctl < Formula
   end
 
   test do
-    system "#{bin}/vctl", "version"
+    system "#{bin}/vctl", "--version"
   end
 end
