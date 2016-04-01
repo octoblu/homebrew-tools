@@ -1,8 +1,8 @@
 class Travisify < Formula
   desc "Create a travis yaml and enable travis"
   homepage "https://github.com/octoblu/node-dev-tools"
-  url "https://github.com/octoblu/node-dev-tools/archive/v1.0.0.tar.gz"
-  sha256 "dd82aab3c9dc1f1976ced600fe79762628de4c2714adc71531fa6ab965418c37"
+  url "https://github.com/octoblu/node-dev-tools/archive/v1.0.1.tar.gz"
+  sha256 "781893dbc49f41e898a43dcb2a0099ada1d2d609f3f230ab2173ba24b0bada9b"
 
   def install
     bin.install "bash/travisify"
