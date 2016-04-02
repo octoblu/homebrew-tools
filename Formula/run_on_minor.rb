@@ -1,5 +1,5 @@
-class Majorsync < Formula
-  desc "Sync etcd values to the major cluster"
+class RunOnMinor < Formula
+  desc "Run a command on all servers in the minor cluster, one by one"
   homepage "https://github.com/octoblu/ops-tools"
   url "https://github.com/octoblu/ops-tools/archive/v1.1.0.tar.gz"
   sha256 "b466d1a1697bbb62cce6f3c1b0ef87bb10f4e08492393efbed8e50ed0d9a7862"
@@ -7,10 +7,10 @@ class Majorsync < Formula
   depends_on 'octoblu/tools/etcdsync'
 
   def install
-    bin.install "bash/majorsync"
+    bin.install "bash/run_on_minor"
   end
 
   test do
-    system "#{bin}/majorsync", "--version"
+    system "#{bin}/run_on_minor", "--version"
   end
 end
