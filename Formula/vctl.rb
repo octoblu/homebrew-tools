@@ -25,6 +25,6 @@ class Vctl < Formula
   end
 
   test do
-    system "#{bin}/vctl", "--version"
+    assert_equal "vctl version 0.0.0", shell_output("#{bin}/vctl --version", 0).strip
   end
 end

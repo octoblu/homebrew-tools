@@ -24,6 +24,6 @@ class Etcdsync < Formula
   end
 
   test do
-    system "#{bin}/etcdsync", "--version"
+    assert_equal "etcdsync version 1.1.2", shell_output("#{bin}/etcdsync --version", 0).strip
   end
 end
