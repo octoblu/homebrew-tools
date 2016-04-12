@@ -6,6 +6,7 @@ class Gump < Formula
 
   depends_on 'jq'
   depends_on 'coreutils'
+  depends_on 'octoblu/tools/semver'
 
   def install
     bin.install "bash/gump"
