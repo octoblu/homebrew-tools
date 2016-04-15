@@ -1,8 +1,8 @@
 class Gump < Formula
   desc "Unix dev tools created by Octoblu"
   homepage "https://github.com/octoblu/unix-dev-tools"
-  url "https://github.com/octoblu/unix-dev-tools/archive/v1.0.2.tar.gz"
-  sha256 "928d5f447308476195706ae323f3b073b0d285995cf7324108fa0262461d9160"
+  url "https://github.com/octoblu/unix-dev-tools/archive/v1.0.4.tar.gz"
+  sha256 "9345fc5d4df5e663358bfe933c2564b42fee930f15baf91e6bf1666544ded5d4"
 
   depends_on 'jq'
   depends_on 'coreutils'
@@ -13,6 +13,6 @@ class Gump < Formula
   end
 
   test do
-    assert_equal "v1.0.2", shell_output("#{bin}/gump --version").strip
+    assert_equal "v1.0.4", shell_output("#{bin}/gump --version").strip
   end
 end
