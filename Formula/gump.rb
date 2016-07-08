@@ -1,6 +1,8 @@
 class Gump < Formula
+  VERSION = "1.3.0"
+
   desc "Unix dev tools created by Octoblu"
-  url "https://github.com/octoblu/unix-dev-tools-gump/archive/v1.3.0.tar.gz"
+  url "https://github.com/octoblu/unix-dev-tools-gump/archive/v#{VERSION}.tar.gz"
   sha256 "695055d3ca7fc294ed5c1d4d034b8f122937920c3e2a228f2714489d4e15bbff"
   depends_on 'jq'
   depends_on 'coreutils'
@@ -8,7 +10,7 @@ class Gump < Formula
 
   def install
     inreplace "gump.sh", 'local directory="$(script_directory)"', ""
-    inreplace "gump.sh", 'local version=$(cat "$directory/VERSION")', "local version=$(cat #{info}/VERSION)"
+    inreplace "gump.sh", 'local version=$(cat "$directory/VERSION")', "local version=\"#{VERSION}\""
 
     move "gump.sh", "gump"
 
@@ -17,6 +19,6 @@ class Gump < Formula
   end
 
   test do
-    assert_equal "1.3.0", shell_output("#{bin}/gump --version").strip
+    assert_equal "#{VERSION}", shell_output("#{bin}/gump --version").strip
   end
 end
