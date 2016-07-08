@@ -8,15 +8,15 @@ class Gump < Formula
 
   def install
     inreplace "gump.sh", 'local directory="$(script_directory)"', ""
-    inreplace "gump.sh", 'local version=$(cat "$directory/VERSION")', "local version=$(cat #{var}/VERSION)"
+    inreplace "gump.sh", 'local version=$(cat "$directory/VERSION")', "local version=$(cat #{info}/VERSION)"
 
     move "gump.sh", "gump"
 
     bin.install "gump"
-    var.install "VERSION"
+    info.install "VERSION"
   end
 
   test do
-    assert_equal "v1.3.0", shell_output("#{bin}/gump --version").strip
+    assert_equal "1.3.0", shell_output("#{bin}/gump --version").strip
   end
 end
