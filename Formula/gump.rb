@@ -15,7 +15,6 @@ class Gump < Formula
     move "gump.sh", "gump"
 
     bin.install "gump"
-    info.install "VERSION"
   end
 
   test do
