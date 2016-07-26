@@ -1,9 +1,9 @@
 class Fireup < Formula
-  VERSION = "1.0.2"
+  VERSION = "1.0.3"
 
   desc "Fireup a project"
   url "https://github.com/octoblu/unix-dev-tools-fireup/archive/v#{VERSION}.tar.gz"
-  sha256 "d3310579edd770e68ad33125f1b562b6d12c9733ca3a3102e465c0ada3fe4e69"
+  sha256 "72473340d48456a59a5069447b45e0a3924dd6523ca9849013b3efa23e74f376"
 
   def install
     inreplace "fireup.sh", 'local directory="$(script_directory)"', ""
