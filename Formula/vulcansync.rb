@@ -1,10 +1,10 @@
 class Vulcansync < Formula
-  VERSION = "2.1.1"
+  VERSION = "3.0.0"
 
   desc "Sync vulcand frontends, backends, and middlewares to the major cluster"
   homepage "https://github.com/octoblu/ops-tools-vulcansync"
   url "https://github.com/octoblu/ops-tools-vulcansync/archive/v#{VERSION}.tar.gz"
-  sha256 "d6c6a7f550f7ef71305724e752e9d5fc3870426a85b2aaa1f789f0076ef05254"
+  sha256 "592dd96241ff8cfe841f001714f467e14e9519413b80e0a0c0894c4ab51704f8"
 
   depends_on 'octoblu/tools/vctl'
 
