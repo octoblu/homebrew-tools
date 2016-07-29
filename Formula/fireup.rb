@@ -1,9 +1,9 @@
 class Fireup < Formula
-  VERSION = "1.1.2"
+  VERSION = "1.1.3"
 
   desc "Fireup a project"
   url "https://github.com/octoblu/unix-dev-tools-fireup/archive/v#{VERSION}.tar.gz"
-  sha256 "ab0234e76eb5ce3680b53d1b95ada7da3c0e48f14c42bc09933ed3f8f3dc6bfd"
+  sha256 "5ef696cff4b8239bd20d798dee05fdb35a5d49983b1d880c679bfc4f66dd67a7"
   depends_on 'hub'
 
   def install
