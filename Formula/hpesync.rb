@@ -1,10 +1,10 @@
 class Hpesync < Formula
-  VERSION = "1.0.2"
+  VERSION = "1.0.4"
 
   desc "Sync etcd values to the hpe cluster"
   homepage "https://github.com/octoblu/ops-tools-hpesync"
   url "https://github.com/octoblu/ops-tools-hpesync/archive/v#{VERSION}.tar.gz"
-  sha256 "5f29c549250a0aedf0a44f23422d74acb832620175c2d784a62ce39c3f2d9ffc"
+  sha256 "7875594d9b294d121afd7a11b639a9ad5ce727df4d94f8eb027b16f35f4f4842"
 
   depends_on 'octoblu/tools/etcdsync'
 
