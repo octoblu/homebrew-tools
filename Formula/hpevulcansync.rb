@@ -1,10 +1,10 @@
 class Hpevulcansync < Formula
-  VERSION = "1.0.2"
+  VERSION = "2.0.0"
 
   desc "Sync hpe vulcand frontends, backends, and middlewares to the major cluster"
   homepage "https://github.com/octoblu/ops-tools-hpehpevulcansync"
   url "https://github.com/octoblu/ops-tools-hpevulcansync/archive/v#{VERSION}.tar.gz"
-  sha256 "436db9bee8dff9dfd63e268a11c01c576dd402dc7d24bb2803dcb47518f92a7d"
+  sha256 "c9d180915241d87522bc589240c3158f2d4c343beb10884f92150d759920e114"
 
   depends_on 'octoblu/tools/vctl'
 
