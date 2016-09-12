@@ -1,10 +1,11 @@
 class Gump < Formula
-  VERSION = "2.2.0"
+  VERSION = "3.0.2"
 
   desc "Unix dev tools created by Octoblu"
   url "https://github.com/octoblu/unix-dev-tools-gump/archive/v#{VERSION}.tar.gz"
-  sha256 "0b7e28834de215244b5b4eee16d36035442846bb89cc1ba1b3ce037d938c365f"
+  sha256 "0c84ab6722debd378c6c0065b11935930d202a8eebd21a75c0752747537821bf"
   depends_on 'jq'
+  depends_on 'hub'
   depends_on 'coreutils'
   depends_on 'octoblu/tools/semver'
 
