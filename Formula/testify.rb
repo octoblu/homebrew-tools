@@ -1,8 +1,8 @@
 class Testify < Formula
   desc "Setup travis and mocha to run tests"
-  url "https://github.com/octoblu/node-dev-tools/archive/v3.0.0.tar.gz"
-  version "3.0.0"
-  sha256 "f301bc8a2f79a3fa461557cd50f4a6dbec0d8fe1ff55c59b68553ceb14247790"
+  url "https://github.com/octoblu/node-dev-tools/archive/v3.1.0.tar.gz"
+  version "3.1.0"
+  sha256 "6e0ac7ffde67e04b55425b93e76967f8363fbad07a087d78b619a327c42843cf"
 
   depends_on "octoblu/tools/travisify"
 
