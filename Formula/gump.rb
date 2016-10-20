@@ -1,9 +1,9 @@
 class Gump < Formula
-  VERSION = "3.1.2"
+  VERSION = "4.0.0"
 
   desc "Unix dev tools created by Octoblu"
   url "https://github.com/octoblu/unix-dev-tools-gump/archive/v#{VERSION}.tar.gz"
-  sha256 "4a83dd473b3cb55ba15bca6a3e3ad9a269af877f77ebda1e3ba83c7446579293"
+  sha256 "28df0d7d47f77b3a7760fcadd96246a6d4505e088f74e2bac9f3982b8ecd0309"
   depends_on 'jq'
   depends_on 'hub'
   depends_on 'curl'
