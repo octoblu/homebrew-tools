@@ -1,9 +1,9 @@
 class Octoswarm < Formula
-  VERSION = "9.2.0"
+  VERSION = "9.2.2"
 
-  desc "Unix dev tools created by Octoblu"
+  desc "Ops tool for managing docker swarm. Created by Octoblu"
   url "https://github.com/octoblu/ops-tools-octoswarm/archive/v#{VERSION}.tar.gz"
-  sha256 "28422ac5be203ef76d5be337ee37ee3981179d64fc128c6a4d8338a8a584b397"
+  sha256 "09e85d225f03d0a01b53e99ea137c3dfed75ff6e99283cb8d7b7ec1214106a3d"
   depends_on 'jq'
 
   def install
