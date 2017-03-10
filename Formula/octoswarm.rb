@@ -1,9 +1,9 @@
 class Octoswarm < Formula
-  VERSION = "9.2.2"
+  VERSION = "9.3.0"
 
   desc "Ops tool for managing docker swarm. Created by Octoblu"
   url "https://github.com/octoblu/ops-tools-octoswarm/archive/v#{VERSION}.tar.gz"
-  sha256 "09e85d225f03d0a01b53e99ea137c3dfed75ff6e99283cb8d7b7ec1214106a3d"
+  sha256 "f1216ef7699b6b9a293f9c224fd9d7823f7bdd4dd05decc07b6528df5406d809"
   depends_on 'jq'
 
   def install
@@ -16,6 +16,7 @@ class Octoswarm < Formula
     bin.install "octofish"
     bin.install "octomachine"
     bin.install "octostack"
+    bin.install "octosen"
   end
 
   test do
