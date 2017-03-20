@@ -1,9 +1,9 @@
 class Octofind < Formula
-  VERSION = "1.0.0"
+  VERSION = "1.1.0"
 
   desc "Ops tool for finding things octoswarm. Created by Octoblu"
   url "https://github.com/octoblu/ops-tools-octofind/archive/v#{VERSION}.tar.gz"
-  sha256 "2620bbaa530b3f1d4e509268b73b603d4193a0ca2620a04bafe04d290b9a23cc"
+  sha256 "f01b1507eea367e09cd1d02e3b2253fa3581afc7d801e5d0211e4e30f52cac9e"
   depends_on 'jq'
 
   def install
