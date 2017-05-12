@@ -1,9 +1,9 @@
 class Bashblu < Formula
-  VERSION = "3.0.0"
+  VERSION = "3.0.1"
 
   desc "Generate bash scripts"
   url "https://github.com/octoblu/unix-dev-tools-bashblu/archive/v#{VERSION}.tar.gz"
-  sha256 "a29e4e17a28e3aa3cc9984c93fc2dfc91d1b7e69426910b964c6f412173dafd4"
+  sha256 "9d66075f709dfd7b89d515703d5675c1562fe32804b12f34c305f4953eb78153"
 
   def install
     inreplace "bashblu.sh", 'local directory="$(script_directory)"', ""
