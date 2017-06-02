@@ -1,10 +1,10 @@
 class Octodns < Formula
-  VERSION = "2.0.4"
+  VERSION = "3.0.0"
   BIN_FILES = ["octodns", "octodns-alias", "octodns-srv"]
 
   desc "Update Octoblu DNS records"
   url "https://github.com/octoblu/ops-tools-octodns/archive/v#{VERSION}.tar.gz"
-  sha256 "5d26e790ae80d33dcb3dee65a753f63243b069bae697c24b90f85b9d4a189308"
+  sha256 "058042201d136d5c22ac24494dc4e958c8e02d1ed1db546d398685734dc113d1"
   depends_on 'jq'
 
   def install
