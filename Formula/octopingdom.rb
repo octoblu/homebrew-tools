@@ -1,9 +1,9 @@
 class Octopingdom < Formula
-  VERSION = "1.0.0"
+  VERSION = "2.1.0"
 
   desc "Update Octoblu Pingdom checks"
   url "https://github.com/octoblu/ops-tools-octopingdom/archive/v#{VERSION}.tar.gz"
-  sha256 "fe2f854a14a977c21398d8227e30148d9061b55d16dad2fba96e286b7d5fac03"
+  sha256 "778b73c54f5117abe2b734d24946ae8d0600d940796c8d845d0dcaa0c1d8c2e9"
   depends_on 'jq'
 
   def install
